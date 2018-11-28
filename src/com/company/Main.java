@@ -8,10 +8,16 @@ public class Main {
         System.out.println(t1);
         String t2 = cat(35, 59);
         System.out.println(t2);
+        
     }
 
     private static String cat(int start, int end)
     {
-        //Code goes here
+        StringBuffer sb = new StringBuffer();
+
+            for(int i = start; i <= end; i++){
+                sb.append((char)i);
+            }
+        return sb.toString();
     }
 }
